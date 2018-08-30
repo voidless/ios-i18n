@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.6'
   s.watchos.deployment_target = '2.0'
 
+  s.static_framework = true
+
   s.source       = { :git => 'https://github.com/Smartling/ios-i18n.git', :tag => "v#{s.version}" }
   s.source_files = 'Smartling.i18n/*.{h,m,c}'
 end
